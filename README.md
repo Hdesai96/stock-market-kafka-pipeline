@@ -43,6 +43,19 @@ CSV Data → Kafka Producer → EC2 Kafka Broker → Kafka Consumer → AWS S3 �
 pip install kafka-python s3fs pandas
 ```
 
+## AWS Setup
+
+This project requires AWS credentials configured locally.
+
+1. Create an AWS account and IAM user with S3, Glue, and Athena access
+2. Install AWS CLI: https://aws.amazon.com/cli/
+3. Run in your terminal:
+
+aws configure
+
+Enter your own Access Key ID, Secret Access Key, and region (us-east-2)
+
+
 ### 1. Launch EC2 & Start Kafka
 
 ```bash
